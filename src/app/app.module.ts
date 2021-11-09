@@ -1,3 +1,5 @@
+import { StreamsRoutingModule } from './modules/streams-routing.module';
+import { StreamsModule } from './modules/streams.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,7 +17,9 @@ import { AuthModule } from './modules/auth.module';
     BrowserModule,
     // AppRoutingModule,
     AuthRoutingModule,
-    AuthModule
+    AuthModule,
+    StreamsModule,
+    StreamsRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
